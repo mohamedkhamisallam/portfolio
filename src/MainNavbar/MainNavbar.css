@@ -1,0 +1,46 @@
+.active{
+    color: blue;
+    
+
+}
+body{
+
+/* overflow: hidden; */
+
+
+    text-decoration: none;
+}
+.remove{
+    position: relative;
+    text-decoration: double;
+}
+.remove::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: blue;
+    transition: left 0.5s ease, right 0.5s ease;
+    -webkit-transition: left 0.5s ease, right 0.5s ease;
+    -moz-transition: left 0.5s ease, right 0.5s ease;
+    -ms-transition: left 0.5s ease, right 0.5s ease;
+    -o-transition: left 0.5s ease, right 0.5s ease;
+}
+.remove:hover::after{
+
+
+    left: 0;
+    right: 0;
+}
+
+
+
+img{
+    object-fit: cover;
+}
+.offcanvas {
+    transition: transform 0.5s ease-in-out !important; 
+  }
+  
